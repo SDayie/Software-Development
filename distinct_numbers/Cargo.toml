@@ -1,0 +1,9 @@
+[package]
+name = "distinct_numbers"
+version = "0.1.0"
+edition = "2021"
+
+# main.rs is the judge binary (self-contained), lib.rs exposes the
+# same two functions so the integration tests can import them.
+
+[dependencies]
