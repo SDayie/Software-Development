@@ -1,0 +1,19 @@
+[package]
+name = "finding_borders"
+version = "0.1.0"
+edition = "2021"
+
+# the binary the judge runs (self-contained, only one clean answer to stdout)
+[[bin]]
+name = "finding_borders"
+path = "src/main.rs"
+
+# the library is just a mirror of the two functions so tests/ can import them
+[lib]
+name = "finding_borders"
+path = "src/lib.rs"
+
+# crank optimisations for the real run + benchmark
+[profile.release]
+opt-level = 3
+lto = true
