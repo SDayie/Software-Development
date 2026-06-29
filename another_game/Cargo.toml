@@ -1,0 +1,14 @@
+[package]
+name = "another_game"
+version = "0.1.0"
+edition = "2021"
+
+# the runnable program the judge sees
+[[bin]]
+name = "another_game"
+path = "src/main.rs"
+
+# the library twin - only here so tests/ can import the two functions
+[lib]
+name = "another_game"
+path = "src/lib.rs"
