@@ -1,0 +1,17 @@
+[package]
+name = "concert_tickets"
+version = "0.1.0"
+edition = "2021"
+
+# lib.rs = the same two algorithms, exposed so the tests/ folder can import them.
+[lib]
+name = "concert_tickets"
+path = "src/lib.rs"
+
+# main.rs = the standalone file you actually submit to the judge.
+[[bin]]
+name = "concert_tickets"
+path = "src/main.rs"
+
+[profile.release]
+opt-level = 3
