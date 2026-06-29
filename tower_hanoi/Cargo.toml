@@ -1,0 +1,8 @@
+[package]
+name = "hanoi"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "hanoi"
+path = "src/main.rs"
