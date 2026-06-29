@@ -1,0 +1,24 @@
+[package]
+name = "counting_rooms"
+version = "0.1.0"
+edition = "2021"
+
+# this tells cargo "there's also a library half of this project, it starts
+# at src/lib.rs" -- this is what lets tests/ (and anything else) just write
+# `use counting_rooms::...` instead of needing to hack main.rs in directly
+[lib]
+name = "counting_rooms"
+path = "src/lib.rs"
+
+# this tells cargo "the program starts at src/main.rs and the finished
+# program should be called counting_rooms" -- pretty much every detail
+# cargo needs to know to build our project
+[[bin]]
+name = "counting_rooms"
+path = "src/main.rs"
+
+# opt-level = 3 tells the compiler "make the final program run as fast as
+# possible, even if it takes longer to compile" -- this matters a lot for
+# our benchmark, since an un-optimized build can be 10-20x slower
+[profile.release]
+opt-level = 3
