@@ -1,0 +1,10 @@
+[package]
+name = "building_roads"
+version = "0.1.0"
+edition = "2021"
+
+# src/lib.rs is auto-detected as the library (used by tests/)
+# src/main.rs is auto-detected as the binary (the thing the judge runs)
+
+[dependencies]
+# none. std only -> compiles anywhere, no internet needed
