@@ -1,0 +1,9 @@
+[package]
+name = "increasing_array"
+version = "0.1.0"
+edition = "2021"
+
+# [dependencies] section is empty because this project only uses
+# things that come built-in with Rust (the "standard library").
+# We don't need to download anything extra from the internet.
+[dependencies]
