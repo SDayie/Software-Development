@@ -1,0 +1,12 @@
+[package]
+name = "two_sets"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "two_sets"
+path = "src/main.rs"
+
+[lib]
+name = "two_sets"
+path = "src/lib.rs"
